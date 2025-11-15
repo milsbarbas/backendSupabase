@@ -1,0 +1,86 @@
+# ⚡ AÇÕES IMEDIATAS (Copy & Paste)
+
+## 1️⃣ ABRIR PowerShell e executar:
+
+```powershell
+cd "c:\Users\Mils\Desktop\banco de dados\backend"
+
+# Remover sqlite3 do package.json (abrir e deletar a linha)
+# ou executar:
+npm uninstall sqlite3
+npm install
+
+# Inicializar Git
+git init
+git config user.name "waleducadorfisico-creator"
+git config user.email "seu-email@gmail.com"
+
+# Adicionar todos os arquivos (vai respeitar .gitignore)
+git add -A
+git status  # Verificar que .env NÃO aparece aqui
+
+# Primeiro commit
+git commit -m "Initial commit: Backend Express + Supabase"
+
+# Criar branch main
+git branch -M main
+```
+
+## 2️⃣ CRIAR REPOSITÓRIO NO GITHUB
+
+1. Vá para https://github.com/new
+2. Nome: `backend` ou `backend-mils-saude`
+3. Selecione "Private" (se quiser)
+4. **NÃO** marque "Initialize with README" (já temos um)
+5. Clique "Create repository"
+
+## 3️⃣ CONECTAR AO GITHUB
+
+```powershell
+# Copiar exatamente o comando que GitHub mostra:
+# Será algo como:
+
+git remote add origin https://github.com/waleducadorfisico-creator/backend.git
+git push -u origin main
+```
+
+## 4️⃣ PRONTO! ✅
+
+Seu backend está no GitHub e pronto para:
+- Conectar ao Vercel (deploy automático)
+- Compartilhar com o time
+- Versionamento seguro
+
+---
+
+## 🎯 CHECKLIST FINAL
+
+- [ ] `.env.example` criado (sem chaves reais)
+- [ ] `.gitignore` criado
+- [ ] `sqlite3` removido de `package.json`
+- [ ] `README.md` criado no backend
+- [ ] Git inicializado
+- [ ] Primeiro commit feito
+- [ ] Repositório criado no GitHub
+- [ ] Código enviado (git push)
+
+---
+
+## 💡 PRÓXIMO PASSO (Opcional mas recomendado)
+
+Depois que tudo estiver no GitHub, conectar ao Vercel para deploy automático:
+
+1. Vá para https://vercel.com
+2. Clique "Import Project"
+3. Selecione seu repositório GitHub
+4. Em "Environment Variables", adicione:
+   ```
+   SUPABASE_URL
+   SUPABASE_SERVICE_KEY
+   SUPABASE_ANON_KEY
+   ```
+5. Deploy automático a cada push no GitHub! 🚀
+
+---
+
+**Tempo estimado: 15 minutos! ⏱️**
