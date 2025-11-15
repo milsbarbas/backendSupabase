@@ -8,7 +8,7 @@ Este é o backend do projeto, usando Supabase como banco de dados.
 2. Entre na pasta do backend e instale dependências:
 
 ```powershell
-cd backend-supabase
+
 npm install
 ```
 
@@ -48,5 +48,6 @@ PORT=3000
 - Nunca comite o arquivo `.env`. Este repositório já contém um `.gitignore` que ignora `.env`.
 - Para chamadas públicas do front-end, use a chave anon/public e regras RLS apropriadas — nunca use a service_role no cliente.
 - Recomenda-se implementar hashing de senhas (bcrypt) no backend para armazenar senhas com segurança.
+
 
 Se precisar, eu posso ajudar a adicionar scripts para migração de senhas, limpeza de duplicatas ou configuração de políticas RLS.
